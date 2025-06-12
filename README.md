@@ -4,7 +4,7 @@ This project turns your **Raspberry Pi 4 Model B** into a secure **home file ser
 
 ---
 
-## 📷 Setup Example (suggested images)
+## 📷 Setup Example Pictures
 
 | ![Hardware Setup](images/setup-hardware.jpeg) | ![Access on macOS](images/mac-smb-access.png) |
 |---------------------------------------------|-----------------------------------------------|
