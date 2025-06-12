@@ -10,8 +10,6 @@ This project turns your **Raspberry Pi 4 Model B** into a secure **home file ser
 |---------------------------------------------|-----------------------------------------------|
 | *Raspberry Pi with mounted SSDs*            | *Access via Finder on Mac using SMB*          |
 
-> Replace these with your actual setup images and screenshots in a folder named `images`.
-
 ---
 
 ## 📦 Requirements
