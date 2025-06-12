@@ -115,7 +115,7 @@ sudo apt install samba -y
 
 ### 🔒 Step 5: Create Samba User
 
-Use your Raspberry Pi's user(it's usually #pi#):
+Use your Raspberry Pi's user(it's usually **pi**):
 
 find your username:
 ```bash
@@ -158,7 +158,7 @@ sudo nvim /etc/samba/smb.conf
    create mask = 0775
    directory mask = 0775
 ```
-> make sure you match your system path and username 
+> make sure you match your drive path and username 
 
 Save and exit.
 
