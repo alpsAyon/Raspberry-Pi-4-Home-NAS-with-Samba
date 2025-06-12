@@ -4,7 +4,7 @@ This project turns your **Raspberry Pi 4 Model B** into a secure **home file ser
 
 ---
 
-## 📷 Setup Example Pictures
+## 📷 Setup Pictures
 
 | ![Hardware Setup](images/setup-hardware.jpeg) | ![Access on macOS](images/mac-smb-access.png) |
 |---------------------------------------------|-----------------------------------------------|
@@ -16,13 +16,13 @@ This project turns your **Raspberry Pi 4 Model B** into a secure **home file ser
 
 - Raspberry Pi 4 Model B (Raspberry Pi OS installed)
 - Two portable SSDs (formatted: exFAT, NTFS, or ext4)
-- Power supply and USB ports for SSDs (use a powered USB hub if needed)
+- Power supply and USB ports for SSDs
 - Local home Wi-Fi or Ethernet network
 - Monitor/keyboard or SSH access to your Pi
 
 ---
 
-## 🛠️ Step-by-Step Setup
+## 🛠️ Step by Step Setup
 
 ### 🔄 1. Update Your Raspberry Pi
 
@@ -169,3 +169,5 @@ sudo systemctl restart smbd
 ```
 
 ---
+
+> Later I will add the step to access the drive from both Windows and Mac.
