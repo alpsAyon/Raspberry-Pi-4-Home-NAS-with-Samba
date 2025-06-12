@@ -28,3 +28,17 @@ This project turns your **Raspberry Pi 4 Model B** into a secure **home file ser
 
 ```bash
 sudo apt update && sudo apt upgrade -y
+
+---
+
+### 💽 Step 2: Connect and Mount SSDs
+
+1. Plug in your SSDs
+2. Check devices
+
+```bash
+lsblk
+
+you will likely see:
+
+
