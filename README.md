@@ -96,5 +96,76 @@ after reboot check for mounts:
 ```bash
 ls /mnt/ssd1
 ls /mnt/ssd2
+```
+
+---
+
+### 🔐 Step 3: Set Correct Permissions
+
+```bash
+sudo chmod -R pi:pi /mnt/ssd1
+sudo chmod -R pi:pi /mnt/ssh2
+```
+
+### 📥 Step 4: Install Samba
+
+```bash
+sudo apt install samba -y
+```
+
+### 🔒 Step 5: Create Samba User
+
+Use your Raspberry Pi's user(it's usually #pi#):
+
+find your username:
+```bash
+whoami
+```
+
+Now use it for Samba:
+```bash
+sudo smbpasswd -a pi
+sudo smbpasswd -e pi
+```
+
+* Set a password when the promp comes in.
+* this password will be used to access the shared folders.
+
+### 🧩 Step 6: Configure Samba Shares
+
+Edit the Samba config file:
+
+```bash
+sudo nvim /etc/samba/smb.conf
+```
+
+* Add the following at the end of the file:
+
+```ini
+[SSD1]
+   path = /mnt/ssd1
+   browseable = yes
+   writable = yes
+   valid users = pi
+   create mask = 0775
+   directory mask = 0775
+
+[SSD2]
+   path = /mnt/ssd2
+   browseable = yes
+   writable = yes
+   valid users = pi
+   create mask = 0775
+   directory mask = 0775
+```
+> make sure you match your system path and username 
+
+Save and exit.
+
+### 🔁 Step 7: Restart Samba
+
+```bash
+sudo systemctl restart smbd
+```
 
 ---
