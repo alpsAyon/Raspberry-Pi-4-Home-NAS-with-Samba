@@ -170,4 +170,40 @@ sudo systemctl restart smbd
 
 ---
 
-> Later I will add the step to access the drive from both Windows and Mac.
+### 🌐 Access from Other Devices
+
+💻 From Windows
+
+1. Open File Explorer
+2. Enter in address bar:
+
+```lua
+\\raspberrypi.local
+```
+
+or if *.local* doesnt work you can use your Pi's IP:
+
+```bash
+hostname -I
+```
+
+3. Enter login credentials:
+
+* Username: pi >or the username you created
+* Password: (the *smbpasswd* you set earlier)
+
+🍏 From macOS
+
+1. Open Finder --> GO --> Connect to Server
+
+2. Enter:
+```bash
+smb://raspberrypi.local
+```
+
+3. Login with your credentials:
+
+* Username: pi
+* Password: (your Samba password)
+
+---
